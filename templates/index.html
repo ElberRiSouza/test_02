@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Slider Start -->
+<section class="slider">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<h1 class="animated fadeInUp">trombetta-lima's group</h1>
+					<p class="animated fadeInUp">Navigating the Cellular Cosmos: Exploring the Dynamic Landscape of Tissue
+            Microenvironment!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Wrapper Start -->
+<section class="about section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<div class="block">
+					<div class="section-title">
+						<h2>About Us</h2>
+						<p>We are a dynamic team nestled within the Department of Pharmaceutical Technology and
+              Biopharmacy at the Groningen Institute of Pharmacy (GRIP), University of Groningen (RUG).</p>
+					</div>
+					<p>Our research endeavours are driven by a curiosity to dissect how the tissue
+            microenvironments influences the aging process, specifically how age-related alterations in
+            these microenvironments influence susceptibility to various diseases.</p>
+				</div>
+			</div><!-- .col-md-7 close -->
+			<div class="col-md-5">
+				<div class="block">
+					{% comment %} <img src="{% static 'images/about_img.png' %}" alt="Img"> {% endcomment %}
+				</div>
+			</div><!-- .col-md-5 close -->
+		</div>
+	</div>
+</section>
+
+<section class="feature">
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-md-6">
+        <h2 class="section-subtitle">THE AGING PROCESS</h2>
+        <p>Employing state-of-the-art methodologies such as organoid models and gene editing
+          techniques, we explore aging in vitro through two distinct approaches:
+        </p>
+        <p>Inside-Out: By manipulating cellular compartments via gene editing, we induce accelerated
+          aging phenotypes. This approach allows us to unravel the intricate molecular mechanisms
+          underlying age-related modifications within cells.
+        </p>
+        <p>Outside-In: Here, our focus shifts to the tissue microenvironment itself. Through targeted
+          modifications, we mimic accelerated aging conditions in the microenvironment, shedding
+          light on how external factors impact tissue aging and disease susceptibility.
+        </p>
+        <p>
+          Beyond our core focus on tissue microenvironments, we are also deeply intrigued by theintricate communication networks between different organs and their role in age-related diseases. By delving into these complex interactions, we aim to unearth novel therapeutic targets and interventions to combat age-related diseases.
+        </p>
+        <p>
+          Join us on this captivating journey as we navigate the fascinating realm of tissue
+          microenvironments, aging, and disease susceptibility, striving to make impactful
+          contributions to the field of biomedical research. 
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Service Start -->
+<section class="service">
+  <div class="container our_models">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="section-title">
+          <h2>Our Models</h2>
+          <p>Using 3D models to uncover the mechanisms of aging </p>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="service-item">
+          <img src="{% static 'images/brain-icon.png' %}" alt="Img">
+          <h4>Brain</h4>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="service-item">
+          <img src="{% static 'images/liver-icon.png' %}" alt="Img">
+          <h4>Liver</h4>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="service-item">
+          <img src="{% static 'images/pancreas-icon.png' %}" alt="Img">
+          <h4>Pancreas</h4> 
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="service-item">
+          <img src="{% static 'images/heart-icon.png' %}" alt="Img">
+          <h4>Heart</h4>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="service-item">
+          <img src="{% static 'images/blood-brain-icon.png' %}" alt="Img">
+          <h4>Blood-brain-barrier</h4>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="service-item">
+          <img src="{% static 'images/glioblastoma-icon.png' %}" alt="Img">
+          <h4>Glioblastoma</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to action Start -->
+<section class="call-to-action bg-1 section-sm overly">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<h2 class="mb-3">Human in vitro models</h2>
+					<p>We are committed to the 3 R&#39;s principle – Replace, Reduce, Refine – in our research
+            endeavors, ensuring ethical and humane practices while advancing scientific
+            discovery.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Scroll to top-->
+<div id="scroll-to-top" class="scroll-to-top">
+	<span class="icon ion-ios-arrow-up"></span>
+</div>
+
+{% endblock content %}

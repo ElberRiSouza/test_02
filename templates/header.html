@@ -1,0 +1,48 @@
+{% load static %}
+<header class="navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg p-0">
+					<a class="navbar-brand" href="/">
+						<img src="{% static 'images/logo_lab4.png' %}" alt="Logo">
+					</a>
+
+					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="ion-android-menu"></span>
+					</button>
+
+					<div class="collapse navbar-collapse ml-auto" id="navbarsExample09">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="/">Home</a></li>
+							{% comment %} <li class="nav-item @@about"><a class="nav-link" href="about">About Us</a></li> {% endcomment %}
+
+
+							<li class="nav-item dropdown activeRS">
+								<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us <span class="ion-ios-arrow-down"></span></a>
+								<ul class="dropdown-menu" aria-labelledby="dropdown05">
+									<li><a class="dropdown-item activeGrid" href="/team">team</a></li>
+									<li><a class="dropdown-item activeSingle" href="/about">about marina</a></li>
+									{% comment %} <li><a class="dropdown-item activeRS" href="/skills">lab Skills</a></li>
+									<li><a class="dropdown-item activeRS" href="/research">Research</a></li> {% endcomment %}
+									{% comment %} <li><a class="dropdown-item activeFW" href="blog-full-width.html">Blog Full Width</a></li>  {% endcomment %}
+
+								</ul>
+							</li>
+							{% comment %} <li class="nav-item @@blog"><a class="nav-link" href="team">Team</a></li> {% endcomment %}
+							{% comment %} <li class="nav-item @@skills"><a class="nav-link" href="skills">Skills</a></li> {% endcomment %}
+							<li class="nav-item @@blogFW"><a class="nav-link" href="/publications">Publications</a></li>
+							<li class="nav-item @@blogFW"><a class="nav-link" href="/news">News</a></li>
+							<li class="nav-item @@portfolioFilter"><a class="nav-link" href="/booking">Booking system</a></li>
+							<li class="nav-item @@contact"><a class="nav-link" href="/contact">Contact</a></li>
+						</ul>
+					
+						
+
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header><!-- header close -->

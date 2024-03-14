@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="img-team">	
+	<div class="container">				
+		<div class="row">						
+			<div class="col-md-12">									
+				<div class="block">					
+				<h1>our team</h1>		
+				</div>
+			</div>
+		</div>
+	</div> 
+</section> 
+
+<div class="page-wrapper">
+	
+	<div class="container">
+		<div class="row">
+			{% for item in member_list %}
+				<div class="col-md-6">				
+					<div class="post">						
+						<div class="post-thumb">
+							<a href="#">
+								<img class="img-fluid" src="{{ item.member_image.url }}" alt="">
+							</a>
+						</div>
+						<h3 class="post-title"><a href="#">{{ item.name }}</a></h3>
+						<div class="post-meta">
+							<ul>
+								{% if item.orcid %}
+								<li>
+									<a href="{{ item.orcid }}" target="_blank"><iconify-icon icon="cib:orcid" width="25" height="25"></iconify-icon></a>
+								</li>
+								{% endif %}
+								{% if item.linkedin %}
+								<li>
+									<a href="{{ item.linkedin }}" target="_blank"><iconify-icon icon="cib:linkedin" width="25" height="25"></iconify-icon></a>
+								</li>
+								{% endif %}
+							</ul>
+						</div>
+						<div class="post-content">
+							<p>{{ item.introduction_text | safe }}</p>
+						</div>						
+					</div>				
+				</div>
+			{% endfor %}
+		</div>
+	</div>	
+</div>
+
+<section class="page-title bg-2">
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-12">
+		  <div class="block">
+			<h1>Former Members</h1>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+
+<div class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			{% for item in former_member_list %}
+			<div class="col-md-6">
+				<div class="post">
+					<div class="post-thumb">
+						<a href="#">
+							<img class="img-fluid" src="{{ item.member_image.url }}" alt="">
+						</a>
+					</div>
+					<h3 class="post-title"><a href="#">{{ item.name }}</a></h3>
+					<div class="post-meta">
+						<ul>
+							{% if item.orcid %}
+							<li>
+								<a href="{{ item.orcid }}" target="_blank">
+								<iconify-icon icon="cib:orcid" width="25" height="25"></iconify-icon>
+								</a>
+							</li>
+							{% endif %}
+							{% if item.linkedin %}
+							<li>
+								<a href="{{ item.linkedin }}" target="_blank">
+								<iconify-icon icon="cib:linkedin" width="25" height="25"></iconify-icon>
+								</a>
+							</li>
+							{% endif %}
+						</ul>
+					</div> 
+					<div class="post-content">
+						<p>{{ item.introduction_text }}</p>
+					</div>
+				</div>
+			</div>	
+			{% endfor %}					
+		</div>
+	</div>
+</div>
+
+{% endblock content %}
